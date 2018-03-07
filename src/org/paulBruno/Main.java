@@ -41,6 +41,10 @@ public class Main {
 		System.out.println("densité = edge-density = degrée moyen/nb de noeuds ");
 		System.out.println(graph.degreeGraph("densité"));
 		//le graph est sparse car il a peu d'aretes
+		
+		System.out.println("Question 2.1.6.2");
+		graph.isolatedNodes();
+
 
 
 

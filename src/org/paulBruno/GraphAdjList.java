@@ -88,6 +88,14 @@ public class GraphAdjList {
 		return 0;
 	}
 	
+	public void isolatedNodes() {
+		for (Noeud n : noeuds) {
+			if (n.isIsolate()) {
+				System.out.println("noeud isolé id= "+ n.getId() );
+			}
+		}
+	}
+	
 //	public int getTaille() {
 //		ArrayList<Integer> list = new ArrayList<Integer>();
 //		for (Noeud n : noeuds) {

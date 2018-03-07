@@ -25,6 +25,11 @@ public class Noeud {
 	public int getId() {
 		return id;
 	}
+	
+	public boolean isIsolate() {
+		if (this.aretes.size() == 0) return true;
+		else return false;
+	}
 
 	public void setId(int id) {
 		this.id = id;
