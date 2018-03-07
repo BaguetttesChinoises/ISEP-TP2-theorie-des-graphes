@@ -22,6 +22,9 @@ public class Main {
 		graph.ajouterArete(1, 4);
 		System.out.println(graph.toString());
 
+		System.out.println("Question 2.1.5");
+		graph.voisins(2);
+
 		
 
 

@@ -46,6 +46,10 @@ public class GraphAdjList {
 		return null;
 	}
 	
+	public void voisins(int v) {
+		System.out.println("voisins de "+v+" = " +getNoeud(v).getAretes().toString());
+	}
+	
 //	public int getTaille() {
 //		ArrayList<Integer> list = new ArrayList<Integer>();
 //		for (Noeud n : noeuds) {
