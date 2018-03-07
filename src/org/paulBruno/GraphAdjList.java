@@ -3,6 +3,7 @@ package org.paulBruno;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -52,6 +53,39 @@ public class GraphAdjList {
 	
 	public int degree(int v) {
 		return voisins(v).size();
+	}
+	
+	public double degreeGraph( String type ) {
+		List<Integer >listeDegree = new ArrayList<Integer>();
+		for (Noeud n : noeuds) {
+			listeDegree.add(degree(n.getId()));
+		}
+		
+		if (type=="moyenne") {
+			return listeDegree.stream()
+					.mapToInt(val -> val)
+					.average().getAsDouble();
+		}
+		else if (type == "minimum") {
+			return listeDegree.get(
+					listeDegree.indexOf(
+							Collections.min(listeDegree)
+							)
+					);
+		}
+		else if (type == "maximum") {
+			return listeDegree.get(
+					listeDegree.indexOf(
+							Collections.max(listeDegree)
+							)
+					);
+		}
+		else if (type == "densité") {
+			return listeDegree.stream()
+					.mapToInt(val -> val)
+					.average().getAsDouble() / noeuds.size();
+			}
+		return 0;
 	}
 	
 //	public int getTaille() {
