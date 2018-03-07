@@ -25,7 +25,10 @@ public class Main {
 		System.out.println("Question 2.1.5");
 		graph.voisins(2);
 
-		
+		System.out.println("Question 2.1.6");
+		System.out.println(graph.toString());
+
+
 
 
 		
