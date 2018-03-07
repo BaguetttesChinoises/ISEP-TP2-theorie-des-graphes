@@ -20,9 +20,9 @@ public class GraphFactory {
 				
 				graph.ajouterNoeud(new Noeud(u));
 				graph.ajouterNoeud(new Noeud(v));
-				if (u != v) {
-					graph.ajouterArete(u, v);
-				}
+				
+				graph.ajouterArete(u, v);
+				
 
 			}
 		}catch (IOException e) {

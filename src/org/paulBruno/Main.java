@@ -16,17 +16,17 @@ public class Main {
 		System.out.print("ordre du graphe (nombre de noeuds) = ");
 		System.out.println(graph.getNoeuds().size());
 
-		System.out.print("taille du graphe (nombre d'aretes) = ");
+		System.out.println("taille du graphe (nombre d'aretes) = ");
 		
 		System.out.println("Question 2.1.4");
-		graph.ajouterArete(1, 4);
+		graph.ajouterArete(4, 4);
 		System.out.println(graph.toString());
 
 		System.out.println("Question 2.1.5");
-		graph.voisins(2);
+		System.out.println("voisins de "+1+" = "+ graph.voisins(1).toString());
 
 		System.out.println("Question 2.1.6");
-		System.out.println(graph.toString());
+		System.out.println("degrée de "+1+" = "+ graph.degree(1));
 
 
 
