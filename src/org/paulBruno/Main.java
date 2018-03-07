@@ -48,6 +48,12 @@ public class Main {
 		System.out.println("Question 2.1.6.3");
 		graph.graphLoop();
 
+		System.out.println("Question 2.1.6.4");
+		//si le noeud est isolé alors voisin = 0
+		//System.out.println("voisins de "+1+" = "+ graph.voisins(1).toString());
+		//si le noeud forme une boucle alors l'id de ce noeud doit apparaitre dans la liste de ses voisins 
+		//System.out.println("voisins de "+1+" = "+ graph.voisins(1).toString());
+
 		
 
 
