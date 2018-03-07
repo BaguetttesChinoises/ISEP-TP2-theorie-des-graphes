@@ -44,6 +44,11 @@ public class Main {
 		
 		System.out.println("Question 2.1.6.2");
 		graph.isolatedNodes();
+		
+		System.out.println("Question 2.1.6.3");
+		graph.graphLoop();
+
+		
 
 
 

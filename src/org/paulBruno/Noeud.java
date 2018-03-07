@@ -30,6 +30,15 @@ public class Noeud {
 		if (this.aretes.size() == 0) return true;
 		else return false;
 	}
+	
+	public boolean isLooped() {
+		for (Arete arete : aretes) {
+			if (arete.getNoeud().getId() == this.id) {
+				return true;
+			}
+		}
+		return false;
+	}
 
 	public void setId(int id) {
 		this.id = id;

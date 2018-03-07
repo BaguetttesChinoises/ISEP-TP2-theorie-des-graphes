@@ -96,6 +96,14 @@ public class GraphAdjList {
 		}
 	}
 	
+	public void graphLoop() {
+		for (Noeud n : noeuds) {
+			if (n.isLooped()) {
+				System.out.println("noeud 'bouclé' id= "+ n.getId() );
+			}
+		}
+	}
+	
 //	public int getTaille() {
 //		ArrayList<Integer> list = new ArrayList<Integer>();
 //		for (Noeud n : noeuds) {
