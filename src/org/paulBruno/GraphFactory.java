@@ -21,8 +21,8 @@ public class GraphFactory {
 				graph.ajouterNoeud(new Noeud(u));
 				graph.ajouterNoeud(new Noeud(v));
 				if (u != v) {
-					graph.getNoeud(u).ajouterArete(graph.getNoeud(v));
-					graph.getNoeud(v).ajouterArete(graph.getNoeud(u));
+					
+					graph.ajouterArete(u, v);
 				}
 
 			}

@@ -3,7 +3,9 @@ package org.paulBruno;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class GraphAdjList {
 
@@ -26,6 +28,10 @@ public class GraphAdjList {
 		this.noeuds.add(_n);
 	}
 
+	public void ajouterArete(int u, int v) {
+		getNoeud(u).ajouterArete(getNoeud(v));
+		getNoeud(v).ajouterArete(getNoeud(u));		
+	}
 	public List<Noeud> getNoeuds() {
 		return noeuds;
 	}
@@ -39,6 +45,26 @@ public class GraphAdjList {
 		}
 		return null;
 	}
+	
+//	public int getTaille() {
+//		ArrayList<Integer> list = new ArrayList<Integer>();
+//		for (Noeud n : noeuds) {
+//			for (int i=0; i<n.getAretes().size(); i++) {
+//				if (list.contains(n.getAretes().get(i))) {}
+//				else {
+//					int el= (Integer) n.getAretes().get(i).getNoeud().getId();
+//					list.add(el);
+//				}
+//			}
+//		}
+//		System.out.println(list.toString());
+//        Set set = new HashSet() ;
+//        set.addAll(list) ;
+//        ArrayList distinctList = new ArrayList(set);
+//		System.out.println(distinctList.toString());
+//        return distinctList.size();
+//
+//	}
 	
 	public void setNoeuds(List<Noeud> noeuds) {
 		this.noeuds = noeuds;
